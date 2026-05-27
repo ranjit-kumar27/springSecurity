@@ -1,0 +1,19 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven build
+target/
+
+# Mac files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Sensitive Spring Boot config
+src/main/resources/application.properties
+src/main/resources/application.yml
