@@ -6,6 +6,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -20,4 +23,7 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 }
